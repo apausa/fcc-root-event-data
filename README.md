@@ -85,10 +85,3 @@ ddsim -I wzp6_ee_mumuH_ecm240_GEN.stdhep -N 1 -O wzp6_ee_mumuH_ecm240_CLD_SIM.ro
 sed -i "s/DEBUG/INFO/" CLDReconstruction.py
 k4run CLDReconstruction.py --inputFiles wzp6_ee_mumuH_ecm240_CLD_SIM.root --outputBasename wzp6_ee_mumuH_ecm240_CLD --num-events -1
 ```
-
-3.5. Convert from root files to json
-
-```bash
-edm4hep2json wzp6_ee_mumuH_ecm240_CLD_REC.edm4hep.root
-edm4hep2json wzp6_ee_mumuH_ecm240_CLD_SIM.root
-```
